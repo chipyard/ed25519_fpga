@@ -37,12 +37,12 @@ module mult_512_part (
 
 wire [42 : 0] P_0_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_0 (
+) MULT_0_0 (
   .P(P_0_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -53,12 +53,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_0_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_1 (
+) MULT_0_1 (
   .P(P_0_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -69,12 +69,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_0_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_2 (
+) MULT_0_2 (
   .P(P_0_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -85,12 +85,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_0_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_3 (
+) MULT_0_3 (
   .P(P_0_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -101,12 +101,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_0_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_4 (
+) MULT_0_4 (
   .P(P_0_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -117,12 +117,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_0_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_5 (
+) MULT_0_5 (
   .P(P_0_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -133,12 +133,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_0_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_6 (
+) MULT_0_6 (
   .P(P_0_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -149,12 +149,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_0_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_7 (
+) MULT_0_7 (
   .P(P_0_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -165,12 +165,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_0_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_8 (
+) MULT_0_8 (
   .P(P_0_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -181,12 +181,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_0_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_9 (
+) MULT_0_9 (
   .P(P_0_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -197,12 +197,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_0_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_0_10 (
+) MULT_0_10 (
   .P(P_0_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[16:0]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -213,12 +213,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_1_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_0 (
+) MULT_1_0 (
   .P(P_1_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -229,12 +229,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_1_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_1 (
+) MULT_1_1 (
   .P(P_1_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -245,12 +245,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_1_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_2 (
+) MULT_1_2 (
   .P(P_1_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -261,12 +261,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_1_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_3 (
+) MULT_1_3 (
   .P(P_1_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -277,12 +277,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_1_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_4 (
+) MULT_1_4 (
   .P(P_1_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -293,12 +293,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_1_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_5 (
+) MULT_1_5 (
   .P(P_1_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -309,12 +309,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_1_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_6 (
+) MULT_1_6 (
   .P(P_1_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -325,12 +325,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_1_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_7 (
+) MULT_1_7 (
   .P(P_1_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -341,12 +341,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_1_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_8 (
+) MULT_1_8 (
   .P(P_1_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -357,12 +357,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_1_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_9 (
+) MULT_1_9 (
   .P(P_1_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -373,12 +373,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_1_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_1_10 (
+) MULT_1_10 (
   .P(P_1_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[33:17]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -389,12 +389,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_2_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_0 (
+) MULT_2_0 (
   .P(P_2_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -405,12 +405,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_2_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_1 (
+) MULT_2_1 (
   .P(P_2_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -421,12 +421,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_2_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_2 (
+) MULT_2_2 (
   .P(P_2_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -437,12 +437,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_2_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_3 (
+) MULT_2_3 (
   .P(P_2_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -453,12 +453,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_2_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_4 (
+) MULT_2_4 (
   .P(P_2_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -469,12 +469,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_2_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_5 (
+) MULT_2_5 (
   .P(P_2_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -485,12 +485,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_2_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_6 (
+) MULT_2_6 (
   .P(P_2_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -501,12 +501,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_2_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_7 (
+) MULT_2_7 (
   .P(P_2_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -517,12 +517,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_2_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_8 (
+) MULT_2_8 (
   .P(P_2_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -533,12 +533,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_2_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_9 (
+) MULT_2_9 (
   .P(P_2_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -549,12 +549,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_2_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_2_10 (
+) MULT_2_10 (
   .P(P_2_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[50:34]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -565,12 +565,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_3_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_0 (
+) MULT_3_0 (
   .P(P_3_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -581,12 +581,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_3_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_1 (
+) MULT_3_1 (
   .P(P_3_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -597,12 +597,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_3_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_2 (
+) MULT_3_2 (
   .P(P_3_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -613,12 +613,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_3_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_3 (
+) MULT_3_3 (
   .P(P_3_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -629,12 +629,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_3_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_4 (
+) MULT_3_4 (
   .P(P_3_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -645,12 +645,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_3_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_5 (
+) MULT_3_5 (
   .P(P_3_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -661,12 +661,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_3_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_6 (
+) MULT_3_6 (
   .P(P_3_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -677,12 +677,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_3_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_7 (
+) MULT_3_7 (
   .P(P_3_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -693,12 +693,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_3_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_8 (
+) MULT_3_8 (
   .P(P_3_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -709,12 +709,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_3_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_9 (
+) MULT_3_9 (
   .P(P_3_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -725,12 +725,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_3_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_3_10 (
+) MULT_3_10 (
   .P(P_3_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[67:51]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -741,12 +741,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_4_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_0 (
+) MULT_4_0 (
   .P(P_4_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -757,12 +757,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_4_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_1 (
+) MULT_4_1 (
   .P(P_4_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -773,12 +773,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_4_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_2 (
+) MULT_4_2 (
   .P(P_4_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -789,12 +789,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_4_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_3 (
+) MULT_4_3 (
   .P(P_4_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -805,12 +805,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_4_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_4 (
+) MULT_4_4 (
   .P(P_4_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -821,12 +821,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_4_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_5 (
+) MULT_4_5 (
   .P(P_4_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -837,12 +837,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_4_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_6 (
+) MULT_4_6 (
   .P(P_4_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -853,12 +853,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_4_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_7 (
+) MULT_4_7 (
   .P(P_4_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -869,12 +869,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_4_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_8 (
+) MULT_4_8 (
   .P(P_4_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -885,12 +885,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_4_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_9 (
+) MULT_4_9 (
   .P(P_4_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -901,12 +901,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_4_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_4_10 (
+) MULT_4_10 (
   .P(P_4_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[84:68]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -917,12 +917,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_5_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_0 (
+) MULT_5_0 (
   .P(P_5_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -933,12 +933,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_5_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_1 (
+) MULT_5_1 (
   .P(P_5_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -949,12 +949,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_5_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_2 (
+) MULT_5_2 (
   .P(P_5_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -965,12 +965,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_5_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_3 (
+) MULT_5_3 (
   .P(P_5_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -981,12 +981,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_5_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_4 (
+) MULT_5_4 (
   .P(P_5_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -997,12 +997,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_5_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_5 (
+) MULT_5_5 (
   .P(P_5_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1013,12 +1013,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_5_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_6 (
+) MULT_5_6 (
   .P(P_5_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1029,12 +1029,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_5_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_7 (
+) MULT_5_7 (
   .P(P_5_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1045,12 +1045,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_5_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_8 (
+) MULT_5_8 (
   .P(P_5_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1061,12 +1061,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_5_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_9 (
+) MULT_5_9 (
   .P(P_5_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1077,12 +1077,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_5_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_5_10 (
+) MULT_5_10 (
   .P(P_5_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[101:85]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1093,12 +1093,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_6_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_0 (
+) MULT_6_0 (
   .P(P_6_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1109,12 +1109,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_6_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_1 (
+) MULT_6_1 (
   .P(P_6_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1125,12 +1125,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_6_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_2 (
+) MULT_6_2 (
   .P(P_6_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1141,12 +1141,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_6_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_3 (
+) MULT_6_3 (
   .P(P_6_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1157,12 +1157,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_6_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_4 (
+) MULT_6_4 (
   .P(P_6_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1173,12 +1173,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_6_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_5 (
+) MULT_6_5 (
   .P(P_6_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1189,12 +1189,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_6_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_6 (
+) MULT_6_6 (
   .P(P_6_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1205,12 +1205,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_6_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_7 (
+) MULT_6_7 (
   .P(P_6_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1221,12 +1221,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_6_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_8 (
+) MULT_6_8 (
   .P(P_6_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1237,12 +1237,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_6_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_9 (
+) MULT_6_9 (
   .P(P_6_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1253,12 +1253,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_6_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_6_10 (
+) MULT_6_10 (
   .P(P_6_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[118:102]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1269,12 +1269,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_7_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_0 (
+) MULT_7_0 (
   .P(P_7_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1285,12 +1285,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_7_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_1 (
+) MULT_7_1 (
   .P(P_7_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1301,12 +1301,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_7_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_2 (
+) MULT_7_2 (
   .P(P_7_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1317,12 +1317,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_7_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_3 (
+) MULT_7_3 (
   .P(P_7_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1333,12 +1333,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_7_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_4 (
+) MULT_7_4 (
   .P(P_7_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1349,12 +1349,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_7_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_5 (
+) MULT_7_5 (
   .P(P_7_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1365,12 +1365,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_7_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_6 (
+) MULT_7_6 (
   .P(P_7_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1381,12 +1381,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_7_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_7 (
+) MULT_7_7 (
   .P(P_7_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1397,12 +1397,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_7_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_8 (
+) MULT_7_8 (
   .P(P_7_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1413,12 +1413,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_7_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_9 (
+) MULT_7_9 (
   .P(P_7_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1429,12 +1429,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_7_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_7_10 (
+) MULT_7_10 (
   .P(P_7_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[135:119]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1445,12 +1445,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_8_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_0 (
+) MULT_8_0 (
   .P(P_8_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1461,12 +1461,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_8_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_1 (
+) MULT_8_1 (
   .P(P_8_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1477,12 +1477,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_8_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_2 (
+) MULT_8_2 (
   .P(P_8_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1493,12 +1493,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_8_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_3 (
+) MULT_8_3 (
   .P(P_8_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1509,12 +1509,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_8_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_4 (
+) MULT_8_4 (
   .P(P_8_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1525,12 +1525,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_8_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_5 (
+) MULT_8_5 (
   .P(P_8_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1541,12 +1541,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_8_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_6 (
+) MULT_8_6 (
   .P(P_8_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1557,12 +1557,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_8_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_7 (
+) MULT_8_7 (
   .P(P_8_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1573,12 +1573,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_8_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_8 (
+) MULT_8_8 (
   .P(P_8_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1589,12 +1589,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_8_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_9 (
+) MULT_8_9 (
   .P(P_8_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1605,12 +1605,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_8_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_8_10 (
+) MULT_8_10 (
   .P(P_8_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[152:136]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1621,12 +1621,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_9_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_0 (
+) MULT_9_0 (
   .P(P_9_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1637,12 +1637,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_9_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_1 (
+) MULT_9_1 (
   .P(P_9_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1653,12 +1653,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_9_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_2 (
+) MULT_9_2 (
   .P(P_9_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1669,12 +1669,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_9_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_3 (
+) MULT_9_3 (
   .P(P_9_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1685,12 +1685,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_9_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_4 (
+) MULT_9_4 (
   .P(P_9_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1701,12 +1701,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_9_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_5 (
+) MULT_9_5 (
   .P(P_9_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1717,12 +1717,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_9_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_6 (
+) MULT_9_6 (
   .P(P_9_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1733,12 +1733,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_9_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_7 (
+) MULT_9_7 (
   .P(P_9_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1749,12 +1749,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_9_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_8 (
+) MULT_9_8 (
   .P(P_9_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1765,12 +1765,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_9_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_9 (
+) MULT_9_9 (
   .P(P_9_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1781,12 +1781,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_9_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_9_10 (
+) MULT_9_10 (
   .P(P_9_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[169:153]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1797,12 +1797,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_10_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_0 (
+) MULT_10_0 (
   .P(P_10_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1813,12 +1813,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_10_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_1 (
+) MULT_10_1 (
   .P(P_10_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1829,12 +1829,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_10_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_2 (
+) MULT_10_2 (
   .P(P_10_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1845,12 +1845,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_10_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_3 (
+) MULT_10_3 (
   .P(P_10_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1861,12 +1861,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_10_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_4 (
+) MULT_10_4 (
   .P(P_10_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1877,12 +1877,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_10_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_5 (
+) MULT_10_5 (
   .P(P_10_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1893,12 +1893,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_10_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_6 (
+) MULT_10_6 (
   .P(P_10_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1909,12 +1909,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_10_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_7 (
+) MULT_10_7 (
   .P(P_10_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1925,12 +1925,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_10_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_8 (
+) MULT_10_8 (
   .P(P_10_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1941,12 +1941,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_10_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_9 (
+) MULT_10_9 (
   .P(P_10_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1957,12 +1957,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_10_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_10_10 (
+) MULT_10_10 (
   .P(P_10_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[186:170]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1973,12 +1973,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_11_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_0 (
+) MULT_11_0 (
   .P(P_11_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -1989,12 +1989,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_11_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_1 (
+) MULT_11_1 (
   .P(P_11_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2005,12 +2005,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_11_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_2 (
+) MULT_11_2 (
   .P(P_11_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2021,12 +2021,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_11_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_3 (
+) MULT_11_3 (
   .P(P_11_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2037,12 +2037,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_11_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_4 (
+) MULT_11_4 (
   .P(P_11_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2053,12 +2053,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_11_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_5 (
+) MULT_11_5 (
   .P(P_11_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2069,12 +2069,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_11_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_6 (
+) MULT_11_6 (
   .P(P_11_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2085,12 +2085,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_11_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_7 (
+) MULT_11_7 (
   .P(P_11_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2101,12 +2101,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_11_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_8 (
+) MULT_11_8 (
   .P(P_11_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2117,12 +2117,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_11_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_9 (
+) MULT_11_9 (
   .P(P_11_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2133,12 +2133,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_11_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_11_10 (
+) MULT_11_10 (
   .P(P_11_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[203:187]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2149,12 +2149,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_12_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_0 (
+) MULT_12_0 (
   .P(P_12_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2165,12 +2165,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_12_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_1 (
+) MULT_12_1 (
   .P(P_12_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2181,12 +2181,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_12_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_2 (
+) MULT_12_2 (
   .P(P_12_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2197,12 +2197,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_12_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_3 (
+) MULT_12_3 (
   .P(P_12_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2213,12 +2213,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_12_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_4 (
+) MULT_12_4 (
   .P(P_12_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2229,12 +2229,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_12_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_5 (
+) MULT_12_5 (
   .P(P_12_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2245,12 +2245,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_12_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_6 (
+) MULT_12_6 (
   .P(P_12_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2261,12 +2261,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_12_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_7 (
+) MULT_12_7 (
   .P(P_12_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2277,12 +2277,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_12_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_8 (
+) MULT_12_8 (
   .P(P_12_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2293,12 +2293,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_12_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_9 (
+) MULT_12_9 (
   .P(P_12_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2309,12 +2309,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_12_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_12_10 (
+) MULT_12_10 (
   .P(P_12_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[220:204]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2325,12 +2325,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_13_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_0 (
+) MULT_13_0 (
   .P(P_13_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2341,12 +2341,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_13_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_1 (
+) MULT_13_1 (
   .P(P_13_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2357,12 +2357,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_13_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_2 (
+) MULT_13_2 (
   .P(P_13_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2373,12 +2373,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_13_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_3 (
+) MULT_13_3 (
   .P(P_13_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2389,12 +2389,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_13_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_4 (
+) MULT_13_4 (
   .P(P_13_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2405,12 +2405,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_13_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_5 (
+) MULT_13_5 (
   .P(P_13_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2421,12 +2421,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_13_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_6 (
+) MULT_13_6 (
   .P(P_13_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2437,12 +2437,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_13_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_7 (
+) MULT_13_7 (
   .P(P_13_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2453,12 +2453,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_13_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_8 (
+) MULT_13_8 (
   .P(P_13_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2469,12 +2469,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_13_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_9 (
+) MULT_13_9 (
   .P(P_13_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2485,12 +2485,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_13_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_13_10 (
+) MULT_13_10 (
   .P(P_13_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[237:221]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2501,12 +2501,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_14_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_0 (
+) MULT_14_0 (
   .P(P_14_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2517,12 +2517,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_14_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_1 (
+) MULT_14_1 (
   .P(P_14_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2533,12 +2533,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_14_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_2 (
+) MULT_14_2 (
   .P(P_14_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2549,12 +2549,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_14_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_3 (
+) MULT_14_3 (
   .P(P_14_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2565,12 +2565,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_14_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_4 (
+) MULT_14_4 (
   .P(P_14_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2581,12 +2581,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_14_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_5 (
+) MULT_14_5 (
   .P(P_14_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2597,12 +2597,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_14_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_6 (
+) MULT_14_6 (
   .P(P_14_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2613,12 +2613,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_14_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_7 (
+) MULT_14_7 (
   .P(P_14_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2629,12 +2629,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_14_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_8 (
+) MULT_14_8 (
   .P(P_14_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2645,12 +2645,12 @@ MULT_MACRO #(
 
 wire [42 : 0] P_14_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_9 (
+) MULT_14_9 (
   .P(P_14_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2661,12 +2661,12 @@ MULT_MACRO #(
 
 wire [34 : 0] P_14_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(18)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_14_10 (
+) MULT_14_10 (
   .P(P_14_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[254:238]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2677,12 +2677,12 @@ MULT_MACRO #(
 
 wire [26 : 0] P_15_0;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_0 (
+) MULT_15_0 (
   .P(P_15_0),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[23:0]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2693,12 +2693,12 @@ MULT_MACRO #(
 
 wire [26 : 0] P_15_1;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_1 (
+) MULT_15_1 (
   .P(P_15_1),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[47:24]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2709,12 +2709,12 @@ MULT_MACRO #(
 
 wire [26 : 0] P_15_2;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_2 (
+) MULT_15_2 (
   .P(P_15_2),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[71:48]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2725,12 +2725,12 @@ MULT_MACRO #(
 
 wire [26 : 0] P_15_3;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_3 (
+) MULT_15_3 (
   .P(P_15_3),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[95:72]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2741,12 +2741,12 @@ MULT_MACRO #(
 
 wire [26 : 0] P_15_4;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_4 (
+) MULT_15_4 (
   .P(P_15_4),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[119:96]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2757,12 +2757,12 @@ MULT_MACRO #(
 
 wire [26 : 0] P_15_5;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_5 (
+) MULT_15_5 (
   .P(P_15_5),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[143:120]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2773,12 +2773,12 @@ MULT_MACRO #(
 
 wire [26 : 0] P_15_6;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_6 (
+) MULT_15_6 (
   .P(P_15_6),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[167:144]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2789,12 +2789,12 @@ MULT_MACRO #(
 
 wire [26 : 0] P_15_7;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_7 (
+) MULT_15_7 (
   .P(P_15_7),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[191:168]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2805,12 +2805,12 @@ MULT_MACRO #(
 
 wire [26 : 0] P_15_8;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_8 (
+) MULT_15_8 (
   .P(P_15_8),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[215:192]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2821,12 +2821,12 @@ MULT_MACRO #(
 
 wire [26 : 0] P_15_9;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(25),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_9 (
+) MULT_15_9 (
   .P(P_15_9),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[239:216]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
@@ -2837,12 +2837,12 @@ MULT_MACRO #(
 
 wire [18 : 0] P_15_10;
 
-MULT_MACRO #(
+MULT #(
   .DEVICE("7SERIES"), // Target Device: "VIRTEX5", "VIRTEX6", "SPARTAN6","7SERIES"
   .LATENCY(3),        // Desired clock cycle latency, 0-4
   .WIDTH_A(17),       // Multiplier A-input bus width, 1-25
   .WIDTH_B(2)        // Multiplier B-input bus width, 1-18
-) MULT_MACRO_15_10 (
+) MULT_15_10 (
   .P(P_15_10),     // Multiplier output bus, width determined by WIDTH_P parameter
   .A({1'b0, mult_part_in0[255:240]}),     // Multiplier input A bus, width determined by WIDTH_A parameter
   .B({1'b0, mult_part_in1[255:255]}),     // Multiplier input B bus, width determined by WIDTH_B parameter
