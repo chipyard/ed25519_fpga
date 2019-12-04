@@ -301,10 +301,10 @@ always @* begin
 end
 
 /* Enable reduction unit */
-assign red_ena = (core_state_reg == STATE_REDUCE_R && red_ready)
-               | (core_state_reg == STATE_REDUCE_HRAM && red_ready)
-               | (core_state_reg == STATE_REDUCE_HRAM_A && red_ready)
-               | (core_state_reg == STATE_REDUCE_FINAL && red_ready);
+assign red_ena = (core_state_reg == STATE_REDUCE_R/* && red_ready*/)
+               | (core_state_reg == STATE_REDUCE_HRAM/* && red_ready*/)
+               | (core_state_reg == STATE_REDUCE_HRAM_A/* && red_ready*/)
+               | (core_state_reg == STATE_REDUCE_FINAL/* && red_ready*/);
 
 /*-------------------------------------FSM------------------------------------*/
 
