@@ -7,7 +7,7 @@ for calculating R, take r and use the base-point multiplier
 TODO: Remove the BRAMs, they are useless
 */
 
-`include "./memories/bram_256.v"
+//`include "./memories/bram_256.v"
 `include "./memories/bram_512.v"
 `include "./multiplier/mult_units_512.v"
 `include "./modular_reduce/barrett.v"
@@ -78,19 +78,6 @@ localparam [3:0] STATE_ADD_R_HRAMA      = 4'd5;
 localparam [3:0] STATE_REDUCE_FINAL     = 4'd6;
 localparam [3:0] STATE_OUTPUT           = 4'd7;
 
-localparam [2:0] ADDR_SCALAR_MULTS      = 3'd0;
-
-localparam [2:0] ADDR_INVERSES          = 3'd1;
-localparam [2:0] ADDR_RED_FINAL         = 3'd1;
-
-localparam [2:0] ADDR_RED_R             = 3'd2;
-localparam [2:0] ADDR_RED_HRAM_A        = 3'd2;
-
-localparam [2:0] ADDR_RED_HRAM          = 3'd3;
-localparam [2:0] ADDR_ADD_R_HRAMA       = 3'd3;
-
-localparam [2:0] ADDR_HRAM_A            = 3'd5;
-
 /*-----------------------------------WIRES------------------------------------*/
 
 /* Raw results */
@@ -105,13 +92,9 @@ wire red_comp_done;
 wire [255:0] red_mult_in_0;
 wire [255:0] red_mult_in_1;
 
-wire bram_1_we;
-wire bram_2_we;
-wire bram_3_we;
-
-wire [511:0] bram_1_data_out;
-wire [255:0] bram_2_data_out;
-wire [255:0] bram_3_data_out;
+wire HRAM_A_we; // Originally in bram_1
+wire HRAM_we; // Originally in bram_2
+wire R_we; // Originally in bram_2
 
 /*------------------------------------REGS------------------------------------*/
 
@@ -128,12 +111,10 @@ reg [511:0] red_mult_out_512;
 reg [3:0] mult_counter_reg;
 reg [3:0] mult_counter_new;
 
-reg [2:0] bram_addr_reg;
-reg [2:0] bram_addr_new;
-
-reg [511:0] bram_1_data_in;
-reg [255:0] bram_2_data_in;
-reg [255:0] bram_3_data_in;
+reg [511:0] HRAM_A; // Originally in bram_1 (TODO: But maybe is possible to do it in just HRAM?)
+reg [255:0] HRAM; // Originally in bram_2
+reg [255:0] R; // Originally in bram_2
+// Everythng in bram_3 can be used with "HRAM"
 
 /*--------------------------------COMPONENTS----------------------------------*/
 
@@ -159,30 +140,6 @@ barrett_reduce red (
     .red_out(red_out)
     );
 
-bram_512 bram_1 (
-    .clk(clk),
-    .we(bram_1_we),
-    .addr(bram_addr_new),
-    .data_in(bram_1_data_in),
-    .data_out(bram_1_data_out)
-    );
-
-bram_256 bram_2 (
-    .clk(clk),
-    .we(bram_2_we),
-    .addr(bram_addr_new),
-    .data_in(bram_2_data_in),
-    .data_out(bram_2_data_out)
-    );
-
-bram_256 bram_3 (
-    .clk(clk),
-    .we(bram_3_we),
-    .addr(bram_addr_new),
-    .data_in(bram_3_data_in),
-    .data_out(bram_3_data_out)
-    );
-
 /*---------------------------------CONNECTIVITY-------------------------------*/
 
 /* Multipliers */
@@ -203,7 +160,7 @@ always @* begin
             red_mult_out_512 = mult_1_out_512;
     end
     if (core_state_reg == STATE_MULT_HRAM_A) begin
-            mult_1_in_0 = bram_2_data_out;
+            mult_1_in_0 = HRAM;
             mult_1_in_1 = changeEndian_256({hashd_key[511:507], 3'b0, hashd_key[503:264],
                 2'b01, hashd_key[261:256]});
     end
@@ -221,83 +178,42 @@ always @* begin
         red_in = hashd_ram;//bram_1_data_out;
     end
     if (core_state_reg == STATE_REDUCE_HRAM_A) begin
-        red_in = bram_1_data_out;
+        red_in = HRAM_A;//bram_1_data_out;
     end
     if (core_state_reg == STATE_REDUCE_FINAL) begin
-        red_in = bram_3_data_out;
+        red_in = HRAM;//bram_3_data_out;
     end
 end
 
 /*------------------------------------RAM-------------------------------------*/
 
-assign bram_1_we = (mult_counter_reg == 4'h0);
+assign HRAM_A_we = (mult_counter_reg == 4'h0);
+assign R_we = red_comp_done && core_state_reg == STATE_REDUCE_R;
+assign HRAM_we = (red_comp_done && 
+                  (core_state_reg == STATE_REDUCE_HRAM || 
+                   core_state_reg == STATE_REDUCE_FINAL ||
+                   core_state_reg == STATE_REDUCE_HRAM_A))
+               || (core_state_reg == STATE_ADD_R_HRAMA);
 
-assign bram_2_we = (red_comp_done &&
-                   (core_state_reg == STATE_REDUCE_R ||
-                    core_state_reg == STATE_REDUCE_HRAM));
-assign bram_3_we = (red_comp_done &&
-                   (core_state_reg == STATE_REDUCE_FINAL ||
-                    core_state_reg == STATE_REDUCE_HRAM_A))
-                 | (core_state_reg == STATE_ADD_R_HRAMA);
+always @(posedge clk) if(HRAM_A_we) HRAM_A <= mult_1_out_512;
 
-always @(posedge clk) begin
-    if (rst) begin
-        bram_addr_reg <= 3'b0;
-    end
-    else begin
-        bram_addr_reg <= bram_addr_new;
-    end
-end
+always @(posedge clk) if(R_we) R <= red_out;
 
-// Manage the addresses.
-always @* begin
-    /* Default is no change */
-    bram_addr_new = bram_addr_reg;
-    if (core_state_reg == STATE_REDUCE_R && red_comp_done)
-        bram_addr_new = ADDR_RED_R;
-    else if (core_state_reg == STATE_REDUCE_HRAM && red_comp_done)
-        bram_addr_new = ADDR_RED_HRAM;
-    else if (core_state_reg == STATE_MULT_HRAM_A && mult_counter_reg == 4'b0)
-        bram_addr_new = ADDR_HRAM_A;
-    else if (core_state_reg == STATE_REDUCE_HRAM_A && red_comp_done)
-        bram_addr_new = ADDR_RED_HRAM_A;
-    else if (core_state_reg == STATE_ADD_R_HRAMA)
-        bram_addr_new = ADDR_ADD_R_HRAMA;
-    else if (core_state_reg == STATE_REDUCE_FINAL && red_comp_done)
-        bram_addr_new = ADDR_RED_FINAL;
-end
-
-// Write to BRAM_1
-always @* begin
-    bram_1_data_in = 512'bx;
-    if (core_state_reg == STATE_MULT_HRAM_A) begin
-        bram_1_data_in = mult_1_out_512;
-    end
-end
-
-// Write to BRAM_2
-always @* begin
-    bram_2_data_in = 256'bx;
-    if (core_state_reg == STATE_REDUCE_R) begin
-        bram_2_data_in = red_out;
+always @(posedge clk) begin 
+  if(HRAM_we) begin 
+    if (core_state_reg == STATE_REDUCE_FINAL) begin
+        HRAM <= red_out;
     end
     else if (core_state_reg == STATE_REDUCE_HRAM) begin
-        bram_2_data_in = red_out;
-    end
-end
-
-// Write to BRAM_3
-always @* begin
-    bram_3_data_in = 256'bx;
-    if (core_state_reg == STATE_REDUCE_FINAL) begin
-        bram_3_data_in = red_out;
+        HRAM <= red_out;
     end
     else if (core_state_reg == STATE_REDUCE_HRAM_A) begin
-        bram_3_data_in = red_out;
+        HRAM <= red_out;
     end
     else if (core_state_reg == STATE_ADD_R_HRAMA) begin
-        bram_3_data_in = bram_2_data_out + bram_3_data_out;
+        HRAM <= R + HRAM;
     end
+  end
 end
 
 /* Enable reduction unit */
@@ -384,7 +300,7 @@ always @* begin
     core_S = 256'bx;
     if (core_state_reg == STATE_OUTPUT) begin
         core_comp_done = 1'b1;
-        core_S = changeEndian_256({3'b0, bram_3_data_out[252:0]});
+        core_S = changeEndian_256({3'b0, HRAM[252:0]});
     end
 end
 
