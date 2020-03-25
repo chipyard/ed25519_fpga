@@ -12,7 +12,7 @@ module mult_512 (
     output reg [254 : 0] mult_out
     );
 
-    wire [511 : 0] part_prod_out_00;
+    /*wire [511 : 0] part_prod_out_00;
     wire [511 : 0] part_prod_out_01;
     wire [511 : 0] part_prod_out_02;
     wire [511 : 0] part_prod_out_03;
@@ -37,14 +37,24 @@ module mult_512 (
     wire [511 : 0] part_prod_out_22;
     wire [511 : 0] part_prod_out_23;
     wire [511 : 0] part_prod_out_24;
-    wire [511 : 0] part_prod_out_25;
+    wire [511 : 0] part_prod_out_25;*/
 
     reg [258 : 0] reduc_1_2;
     reg [260 : 0] reduc_16_o;
     reg [261 : 0] reduc_19_o;
     reg [255 : 0] phase_2;
 
-    mult_512_part mult (
+    reg [511 : 0] add_out;
+    reg [511 : 0] add_out_1;
+	reg [255 : 0] mult_in0_r;
+	reg [255 : 0] mult_in1_r;
+	
+	always @(posedge clk) mult_in0_r <= mult_in0;
+	always @(posedge clk) mult_in1_r <= mult_in1;
+	always @(posedge clk) add_out_1 <= mult_in0_r * mult_in1_r;
+	always @(posedge clk) add_out <= add_out_1;
+
+    /*mult_512_part mult (
         .clk(clk),
         .CE(CE),
         .rst(rst),
@@ -78,8 +88,6 @@ module mult_512 (
         .mult_part_out25(part_prod_out_25)
     );
 
-    wire [511 : 0] add_out;
-
     addition_layer_512 add (
         .clk(clk),
         .rst(rst),
@@ -110,7 +118,7 @@ module mult_512 (
         .layer_0_wire_24(part_prod_out_24),
         .layer_0_wire_25(part_prod_out_25),
         .add_layer_out(add_out)
-    );
+    );*/
 
 always @(posedge clk)
     if (rst)
